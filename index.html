@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<script>var __pbpa = true;</script>
+<script type="text/javascript" language="javascript" src="https://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=b9f848c06fcba7eaf305d4a7cb7a1b98"></script>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+  <style>figure{margin:0}.tmblr-iframe{position:absolute}.tmblr-iframe.hide{display:none}.tmblr-iframe--amp-cta-button{visibility:hidden;position:fixed;bottom:10px;left:50%;transform:translateX(-50%);z-index:100}.tmblr-iframe--amp-cta-button.tmblr-iframe--loaded{visibility:visible;animation:iframe-app-cta-transition .2s ease-out}
+  </style>
+  <link rel="stylesheet" media="screen" href="https://assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css?_v=a6c4ad40cdc663ad83f8a1bbc8aeedc6">
+  <link rel="shortcut icon" href="placeholder.ico" type="image/x-icon">
+  <link rel="icon" href="httpS://www.a3-liber.jp/shared/images/top/main_obi_logo.png">
+  <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta name="description" content="A3 Character Sorter">
+  <meta name="keywords" content="">
+  <meta name="generator" content="notepad"><title>A3! Act! Addict! Actors! Character Sorter</title>
+  <meta name="keywords" content="エースリー,A3,A3!,act! addict! actors!,A3! Act! Addict! Actors" />
+
+  <noscript></noscript>
+  <script type="text/javascript" src="httpS://static.tumblr.com/8blsvta/AAUmlpa5y/mod_k-factory.js"></script>  
+  <script type="text/javascript" src="https://static.tumblr.com/ryxkg8z/tUGqhmqp2/fnc_main_v4.js"></script>
+  <script type="text/javascript" src="https://static.tumblr.com/ryxkg8z/wibqhmqq3/a3aaa.js"></script>
+  <script src="https://assets.tumblr.com/assets/scripts/tumblelog_post_message_queue.js?_v=a8fadfa499d8cb7c3f8eefdf0b1adfdd"></script>
+  <style type="text/css">
+    #mainTable {
+       font-size: 14px;
+       font-family: 'Arial', sans-serif;
+       text-align: center;
+       vertical-align: middle;
+       width: 410px;
+       height: 300px;
+       margin-left: auto;
+       margin-right: auto;
+       border-collapse: separate;
+       border-spacing: 10px 5px; 
+       
+    }
+    
+    .tb_header {
+    	font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #fldLeft    {
+        height: 220px;
+    	text-align: center; 
+    	min-width: 200px;
+    	border: 1px solid #000;
+    	cursor:pointer;
+        padding:0px;
+    	font-family: Arial, Helvetica, sans-serif;
+    }
+    #fldRight   {
+        height: 220px;
+    	text-align: center;
+        padding:0px;
+    	min-width: 200px;
+    	border: 1px solid #000;
+    	cursor:pointer;
+    	font-family: Arial, Helvetica, sans-serif;
+    }
+    #fldMiddleT {
+    	text-align: center;
+    	width: 170px;
+    	/*height: 90px;*/
+    	border: 1px solid #000;
+    	cursor:pointer;
+    	font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #fldMiddleT div.button.top {
+    	text-align: center;
+    	width: 100%;
+    	height: 20px;
+    }
+    
+    #divMiddleT {
+        color: #000;
+        display: table-cell;
+        text-align: center;
+        width: 170px;
+    
+        /*line-height: 20px;*/
+        margin: 40px auto;
+        padding: 45px 0px;
+        cursor: pointer;
+    	/*border: 1px solid #000;*/
+    }
+    
+    #fldMiddleB {
+    	text-align: center;
+    	min-width: 170px;
+    	/*height: 90px;*/
+    	padding:0px;
+    	border: 1px solid #000;
+    	cursor:pointer;
+    	font-family: Arial, Helvetica, sans-serif;
+    }
+    #fldMiddleB {
+    	text-align: center;
+    	/*height: 50px;*/
+    	padding: 0px;
+    	font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #divMiddleB {
+        color: #000;
+        display: table-cell;
+        text-align: center;
+        width: 170px;
+        
+        /*line-height: 20px;*/
+        margin: 0px auto;
+        padding: 15px 0px;
+        cursor: pointer;
+        /*border: 1px solid #000;*/
+    
+    }
+    #divMiddleT.disabled,
+    #divMiddleB.disabled {
+        color: #c4c4c4;
+    }
+    
+    div.btl.box {
+    	text-align: center;
+    	width: 690px;
+    	margin: 10px auto;
+    	padding: 10px;
+    	display: block;
+    	border: 1px solid #000;
+    }
+    
+    .cbox {
+    	cursor:pointer;
+    	font-family: Arial, Helvetica, sans-serif;
+    	font-size: 13px;
+    }
+    .cbox.bold {
+    	font-weight: bold;
+    }
+    
+    /* Results */
+    div.result.box {
+    	text-align: center;
+    	margin: 10px auto;
+    	padding: 10px;
+    	display: block;
+    }
+    
+    .chara {
+    	position: relative;
+    	margin: 10px 6px;
+    	min-width: 250px;
+    	padding: 20px 20px 50px 20px;
+    	border: 1px solid #000;
+    }
+    div.chara {
+    	display: inline-block;
+    }
+    
+    .chara .number {
+    	position: absolute;
+    	text-align: center;
+    	margin: 0px 0px 0px -50px;
+    
+    	display: inline-block;
+    
+    	width: 50px;
+    	line-height: 50px;
+    	font-size: 20px;
+    	font-weight: bold;
+    	border-radius: 25px;
+    	color: #000;
+    
+    
+    }
+    .chara .name {
+    	height: 40px;
+    	position: absolute;
+    	bottom: 5px;
+    	width: 100%;
+    	margin: 0px 5px;
+    	border-radius: 10px;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    
+    }
+    .chara .name span {
+    	font-size: 12pt;
+    	width: 80%;
+    }
+    
+    .card {
+        text-align: left;
+        border: 1px solid #000;
+        height: 100px;
+        margin: 10px 5px;
+        padding: 20px 40px;
+        display: inline-block;
+    }
+    .card .number {
+    	color: #000;
+    	border-radius: 20px;
+    	width: 40px;
+    	height: 30px;
+    	margin: -10px 5px -20px -5px;
+    	padding: 10px 0px;
+    	text-align: center;
+    	line-height: 20px;
+    	font-size: 24px;
+    	display: inline-block;
+    
+    }
+    .card span {
+    	font-size: 12pt;
+    }
+    .title {
+    	color: #FFF;
+    	line-height: 20px;
+    	font-size: 25px;
+    	margin-bottom: 10px;
+    	padding: 0px 0px 10px;
+    	display: block;
+    }
+    .instructions {
+        text-align: center;
+        padding: 20px;
+        width: 800px;
+        display: inline-block;
+        line-height:1.4;
+    }
+    <!--
+    .style4 {
+    	font-family: Arial, Helvetica, sans-serif;
+    	color: #000000;
+    	font-weight: normal;
+    	font-size: 13px;
+    	text-align: center;
+    }
+    a:link {
+    	color: #ff6f96;
+    	text-decoration: none;
+    	font-family: Arial, Helvetica, sans-serif;
+    	font-size: 13px;
+    }
+    a {
+    	font-family: Arial, Helvetica, sans-serif;
+    	font-size: 13px;
+    }
+    a:visited {
+    	text-decoration: none;
+    	color: #ff6f96;
+    	font-size: 13px;
+    	font-family: Arial, Helvetica, sans-serif;
+    }
+    a:hover {
+    	text-decoration: none;
+    	color: #73ccff;
+    	font-size: 13px;
+    	font-family: Arial, Helvetica, sans-serif;
+    }
+    a:active {
+    	text-decoration: none;
+    	font-size: 13px;
+    	font-family: Arial, Helvetica, sans-serif;
+    }
+    -->
+  </style>
+  <link rel="alternate" type="application/json+oembed" href="https://www.tumblr.com/oembed/1.0?url=https://a3libersorter.tumblr.com/post/156544739829/a3-act-addict-actors-character-sorter" title="A3! Act! Addict! Actors! Character Sorter https://a3libersorter.tumblr.com/ A3! Character SorterA3! Act! Addict! Actors!Ever want to see where the A3! characters stand on your favourites list? You can now! Enjoy and have fun sorting! Link: HERE"/>
+  <link rel="stylesheet" type="text/css" href="https://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3">
+  
+  <!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" />
+  <meta property="og:title" content="A3! Act! Addict! Actors! Character Sorter" />
+  <meta property="og:url" content="https://a3libersorter.tumblr.com/?og=1" />
+  <meta property="og:description" content="Welcome to the character sorter for Liber Entertainment&#039;s game, A3! Act! Addict! Actors! Note:..." />
+  <meta property="og:type" content="tumblr-feed:tumblelog" />
+  <meta property="og:image" content="https://64.media.tumblr.com/avatar_4ce90849b9bc_128.pnj" />
+  <meta property="al:ios:url" content="tumblr://x-callback-url/blog?blogName=a3libersorter" />
+  <meta property="al:ios:app_name" content="Tumblr" />
+  <meta property="al:ios:app_store_id" content="305343404" />
+  <meta property="al:android:url" content="tumblr://x-callback-url/blog?blogName=a3libersorter" />
+  <meta property="al:android:app_name" content="Tumblr" />
+  <meta property="al:android:package" content="com.tumblr" />
+  <!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+  <!-- TWITTER TAGS -->
+  <meta charset="utf-8"><meta name="twitter:site" content="tumblr" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="a3libersorter" />
+  <meta name="twitter:title" content="a3libersorter" />
+  <meta name="twitter:app:name:iphone" content="Tumblr" />
+  <meta name="twitter:app:name:ipad" content="Tumblr" />
+  <meta name="twitter:app:name:googleplay" content="Tumblr" />
+  <meta name="twitter:app:id:iphone" content="305343404" />
+  <meta name="twitter:app:id:ipad" content="305343404" />
+  <meta name="twitter:app:id:googleplay" content="com.tumblr" />
+  <meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=a3libersorter&amp;referrer=twitter-cards" />
+  <meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=a3libersorter&amp;referrer=twitter-cards" />
+  <meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=a3libersorter&amp;referrer=twitter-cards" />
+  <!-- GOOGLE CAROUSEL -->
+  
+  <script type="application/ld+json">
+	{"@type":"ItemList","url":"https:\/\/a3libersorter.tumblr.com","itemListElement":[{"@type":"ListItem","position":1,"url":"https:\/\/a3libersorter.tumblr.com\/post\/156544739829\/a3-act-addict-actors-character-sorter"}],"@context":"http:\/\/schema.org"}</script>
+	
+	<link rel="canonical" href="https://a3libersorter.tumblr.com" />
+	</head>
+	
+<body onLoad="startup()">
+  <div align="center" class="btl box">
+   <table id="progressTable">
+    <thead>
+     <tr>
+      <td colspan="3" class="tb_header">Battle No. <span id="lblCount">-</span><br>
+       <span id="lblProgress">0</span>% sorted.<br>
+       <div align="center"><span id="GaGprog"></span></div>
+      </td>
+     </tr>
+    </thead>
+   </table>
+   <table id="mainTable">
+    <tbody>
+     <tr>
+      <td id="fldLeft" class="chara" onClick="fnc_Sort(-1);" rowspan="2"><img src="httpS://www.a3-liber.jp/shared/images/top/main_obi_logo.png" width="160px" height="152px"><br><br><div id="left_caption">&nbsp;</div></td>
+      <td id="fldMiddleT">
+		<div id="divMiddleT" onClick="fnc_Sort(0);"><p>Read <br>Instructions<br> Below</p></div></td>
+      <td id="fldRight" class="chara" onClick="fnc_Sort(1);" rowspan="2"><img src="httpS://www.a3-animation.jp/images/logo.png" width="160" height="58"><br><br><div id="right_caption">&nbsp;</div></td>
+     </tr>
+     <tr>
+      <td id="fldMiddleB">
+		<div id="divMiddleB" onClick="fnc_Undo();">Click to start!</div>
+</td>
+     </tr>
+    </tbody>
+    <tfoot>
+     <tr>
+      <td colspan="3"><div align="center">
+        <input id="optImage" type="checkbox" checked style="display: none;"></input>
+        <span class="tb_header"  style="display: none;">Display images while sorting
+        </span></div></td>
+     </tr>
+     <tr>
+      <td colspan="3"><div align="center">
+        <input id="optAgony" type="checkbox" checked></input>
+        <span class="tb_header"><span style="color:#ff6f96;">Disable ties and undos</span>
+        </span></div></td>
+     </tr>
+    </tfoot>
+   </table>
+  </div>
+  <br>
+   <table id="optTable" align="center" width="650px" style="line-height: 2;"></table>
+  <br>
+  <div id="ranTable" width="640px" align="center" class="tb" style="display:none;">
+    <div>
+    <form>
+          <input type='button' value='Raw Text Results' onclick='OpenWnd()'>
+    </form> 	
+  </div>
+  </div>
+  <div class="style4" id="resultField" style="text-align:center;">
+    <p class="instructions" style="text-align:center;">
+      Welcome to the character sorter for Liber Entertainment's game, <strong>A3! Act! Addict! Actors! </strong><br><br>
+      <b>INSTRUCTIONS</b><br>
+      Choose which categories you would like to include for sorting. <br> After starting, simply click the character that you prefer among the two shown, or, if you equally like/dislike/don't care/don't know about both characters, you can select the "tie" option. <br>
+      Once all the matches have been solved (or tied), a list of your favorite characters will be automatically generated. <br><br>
+      <b>ATTENTION</b> <br>
+      Please note that this sorter <b>may have spoilers present</b>.<br><br>
+      If you would like to sort only the four main troupes, you can check one of the Main Troupe to do so depending if you would like to include the rookies (Chikage, Kumon, Azami, Guy) or not. <br>
+      <b>Note:</b> Having both Act 1 and Act 2 checked will still include all 24 members of the Main Troupe of Mankai Company.<br><br>
+      You can also choose "Characters in MANKAI STAGE" to sort the characters that appear in MANKAI STAGE (From Spring & Summer 2018 up until Four Season LIVE 2020. (Feel free to either sort them for their adaptation from the stage or the game. It's up to your own choice!)<br><br>
+      The spoiler characters will only include characters with sprite images in the main/event stories.  Some characters may be missing.<br>
+      If there are missing characters that have sprites are missing, please feel free to send an ask along with the story they are in.<br><br>
+      To view the full list of characters in the sorter, click <a href="https://static.tumblr.com/ryxkg8z/uhQqayfbs/allv4.jpg" target="_blank">here</a> (warning: there will be spoilers). <br>
+      This sorter will get updated if new sprites are found through main/event stories.<br><br>
+      <b>CHANGELOG <a href="https://a3libersorter.tumblr.com/changelog/">(full changelog list)</a>:</b><br>
+      <small>[3/10/2020] <br>- Added a section for characters that appear in MANKAI STAGE!<br><BR><BR></small>
+      <b>Last updated: </b> 3/10/2020<br> <b>Total no. of characters: </b> 85 (71 + 14 mascot characters) <br><br>
+      If you find any issues, try refreshing the page or feel free to send an ask.<br> All questions, comments and troubleshooting should be directed <a href="https://curiouscat.me/arcatens" target="_blank">here</a>.<br> Searching for the old version? Check  <a href="/A3sort" target="_blank">here</a>!<br><br>
+      <b>CREDITS</b><br>
+      Original script by <a href="httpS://kouga.net">K-Factory</a>; original Touhou sorter by <a href="http://mainyan.sakura.ne.jp/thsort.html">E-Phantasm</a>, translated into English <a href="httpS://www.freewebs.com/tohosort/">here</a>.<br>
+      Images and characters are owned by <a href="https://www.a3-liber.jp/" target="_blank">Liber Entertainment</a>. <br>
+      This sorter is unaffiliated with the developers of A3!
+    </p>
+    <br><br>  
+  </div>
+  <iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe>
+  <script type="text/javascript">
+  (function(){
+      var analytics_frame = document.getElementById('ga_target');
+      var analytics_iframe_loaded;
+      var user_logged_in;
+      var blog_is_nsfw = 'No';
+
+      var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+      var eventer = window[eventMethod];
+      var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+      eventer(messageEvent,function(e) {
+          var message = (e.data && e.data.split) ? e.data.split(';') : '';
+          switch (message[0]) {
+              case 'analytics_iframe_loaded':
+                  analytics_iframe_loaded = true;
+                  postCSMessage();
+                  postGAMessage();
+                  break;
+              case 'user_logged_in':
+                  user_logged_in = message[1];
+                  postGAMessage();
+                  break;
+          }
+      }, false);
+
+      analytics_frame.src = "https://assets.tumblr.com/analytics.html?_v=9f5febfd57a8a649c598d888f2d9e062#" +
+                            "https://a3libersorter.tumblr.com";
+      function postGAMessage() {
+          if (analytics_iframe_loaded && user_logged_in) {
+              var is_ajax = false;
+              analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/?route=%2F'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+          }
+      }
+      function postCSMessage() {
+          COMSCORE = true;
+          analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+      }
+  })();
+</script>
+  <script type="text/javascript" nonce="cM1zu5g4MbbUx5Ip0NZyMJPdrbk">
+  !function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1610260019&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDovL2EzbGliZXJzb3J0ZXIudHVtYmxyLmNvbS8iLCJyZXF0eXBlIjowLCJyb3V0ZSI6Ii8ifQ==&U=FGENBKEGNB&K=bba8c0b162d28cb2e227023aed0487d3d23d46ae73c17394f363990a04fca96e&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script>
+  <noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1610260019&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDovL2EzbGliZXJzb3J0ZXIudHVtYmxyLmNvbS8iLCJyZXF0eXBlIjowLCJyb3V0ZSI6Ii8iLCJub3NjcmlwdCI6MX0=&U=FGENBKEGNB&K=01871491a9f7adc43e7d8fb11f7ea3e0cd8616ed38957e557a7fd75591ad33e3&R=">
+  </noscript>
+  <script type="text/javascript" nonce="cM1zu5g4MbbUx5Ip0NZyMJPdrbk">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1610260019&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6Ly9hM2xpYmVyc29ydGVyLnR1bWJsci5jb20vIiwicmVxdHlwZSI6MCwicm91dGUiOiIvIiwicG9zdHMiOlt7InBvc3RpZCI6IjE1NjU0NDczOTgyOSIsImJsb2dpZCI6MzMzNDAyMjk1LCJzb3VyY2UiOjMzfV19&U=KFGMAOELBF&K=c63ef7f4a6e1b0fff2a038f1b75f24aadf8323dd227ecfbcd2cf930ba48a25f6&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());
+  </script>
+  <noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1610260019&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6Ly9hM2xpYmVyc29ydGVyLnR1bWJsci5jb20vIiwicmVxdHlwZSI6MCwicm91dGUiOiIvIiwicG9zdHMiOlt7InBvc3RpZCI6IjE1NjU0NDczOTgyOSIsImJsb2dpZCI6MzMzNDAyMjk1LCJzb3VyY2UiOjMzfV0sIm5vc2NyaXB0IjoxfQ==&U=KFGMAOELBF&K=604fe6570c1c690b962939b3adf37ee5cf88635040c2d1a913aa6516ac3a2d77&R=">
+  </noscript>
+  <noscript id="bootloader"
+  data-bootstrap="{&quot;Components&quot;:{&quot;PostActivity&quot;:[],&quot;NotificationPoller&quot;:{&quot;messaging_keys&quot;:[],&quot;token&quot;:&quot;c86f8a500596474a7ef5034081f694bd&quot;,&quot;inbox_unread&quot;:0},&quot;DesktopDashboardLogo&quot;:{&quot;animations&quot;:[[&quot;https:\/\/assets.tumblr.com\/images\/logo\/hover-animations\/1.png?_v=161861acded461bb6e995593a3bae835&quot;,&quot;https:\/\/assets.tumblr.com\/images\/logo\/hover-animations\/1@2x.png?_v=496a774637302a598c851381d00009b0&quot;]]},&quot;TumblelogIframe&quot;:{&quot;unified&quot;:true,&quot;variant&quot;:null,&quot;isCompact&quot;:true,&quot;tumblelogBundleSrc&quot;:&quot;https:\/\/assets.tumblr.com\/client\/prod\/standalone\/tumblelog\/index.build.js?_v=6be13416468978ab5fb9e5691b0323f3&quot;,&quot;tumblelogName&quot;:&quot;a3libersorter&quot;,&quot;isLoggedIn&quot;:false,&quot;isFriend&quot;:false,&quot;formKey&quot;:&quot;&quot;,&quot;canSubscribe&quot;:false,&quot;isSubscribed&quot;:false,&quot;tumblelogTitle&quot;:&quot;A3! Act! Addict! Actors! Character Sorter&quot;,&quot;tumblelogAvatar&quot;:&quot;https:\/\/64.media.tumblr.com\/avatar_4ce90849b9bc_64.pnj&quot;,&quot;tumblelogAvatar128&quot;:&quot;https:\/\/64.media.tumblr.com\/avatar_4ce90849b9bc_128.pnj&quot;,&quot;tumblelogHost&quot;:&quot;https:\/\/a3libersorter.tumblr.com&quot;,&quot;isOptica&quot;:false,&quot;isCustomTheme&quot;:true,&quot;themeHeaderImage&quot;:&quot;https:\/\/64.media.tumblr.com\/37884a1e9be21a1d8fd3059b5c2a58cb\/4227e21afaeee503-71\/s2048x3072_c0,10385,100000,84038\/e6883672bedb1096c675ea1bd0fec0ed9f2684d9.jpg&quot;,&quot;themeBackgroundColor&quot;:&quot;#FAFAFA&quot;,&quot;themeTitleColor&quot;:&quot;#444444&quot;,&quot;themeAccentColor&quot;:&quot;#529ECC&quot;,&quot;brag&quot;:false,&quot;adsEnabled&quot;:false,&quot;canShowAd&quot;:true,&quot;isPremium&quot;:false,&quot;showLrecAds&quot;:false,&quot;showStickyLrecBackfill&quot;:false,&quot;showGeminiAds&quot;:false,&quot;geminiSectionCodeDesktop&quot;:&quot;a10bca9c-0c5d-4a02-ab13-14ab8513d81d&quot;,&quot;geminiSectionCodeMobile&quot;:&quot;ced63809-b609-4aca-96a0-abc099acba6b&quot;,&quot;currentPageType&quot;:&quot;blog&quot;,&quot;currentPage&quot;:1,&quot;searchQuery&quot;:&quot;&quot;,&quot;tag&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;chrono&quot;:false,&quot;postId&quot;:&quot;&quot;,&quot;src&quot;:&quot;https:\/\/a3libersorter.tumblr.com\/&quot;,&quot;postUrl&quot;:&quot;&quot;,&quot;isBlocked&quot;:null,&quot;isAdmin&quot;:false,&quot;lookupButtonUrl&quot;:&quot;&quot;,&quot;showSpamButton&quot;:false,&quot;showRootPostButton&quot;:false,&quot;rootPostUrl&quot;:&quot;&quot;,&quot;showRadarPostButton&quot;:false,&quot;radarKeys&quot;:&quot;&quot;,&quot;isUniblocked&quot;:false,&quot;isNsfw&quot;:false,&quot;isAdult&quot;:false,&quot;isSpam&quot;:false,&quot;isPrimaryBlog&quot;:false,&quot;canEdit&quot;:false,&quot;canReblogSelf&quot;:false,&quot;showLikeButton&quot;:false,&quot;showReblogButton&quot;:false,&quot;reblogUrl&quot;:&quot;&quot;,&quot;showFanMailButton&quot;:false,&quot;showMessagingButton&quot;:false,&quot;loginCheckIframeSrc&quot;:&quot;https:\/\/assets.tumblr.com\/assets\/html\/iframe\/login_check.html?_v=3de94a184d600617102ddd5b48fb36e9&quot;,&quot;appInstallUrls&quot;:{&quot;android&quot;:&quot;https:\/\/play.google.com\/store\/apps\/details?id=com.tumblr\u0026referrer=utm_source%3Dtumblr%26utm_medium%3Diframe%26utm_campaign%3Dbn_continue_or_install_cta&quot;,&quot;ios&quot;:&quot;https:\/\/apps.apple.com\/app\/apple-store\/id305343404?pt=212308\u0026ct=bn_continue_or_install_cta\u0026mt=8&quot;},&quot;appOpenReferrer&quot;:&quot;bn_header_open_btn&quot;,&quot;isShowSearch&quot;:true,&quot;supplyLogging&quot;:[],&quot;secondsSinceLastActivity&quot;:-1,&quot;installUrlOpenFailed&quot;:{&quot;android&quot;:&quot;https:\/\/play.google.com\/store\/apps\/details?id=com.tumblr\u0026referrer=utm_source%3Dtumblr%26utm_medium%3Diframe%26utm_campaign%3Dbn_header_app_open_failed&quot;,&quot;ios&quot;:&quot;https:\/\/apps.apple.com\/app\/apple-store\/id305343404?pt=212308\u0026ct=bn_header_app_open_failed\u0026mt=8&quot;}}},&quot;Flags&quot;:{&quot;features&quot;:&quot;eyJmaWx0ZXJfbnNmdyI6dHJ1ZSwibW9iaWxlX3dlYl9nYXRlIjp0cnVlLCJzYWZlX21vZGUiOnRydWUsInNhZmVfbW9kZV9lbmFibGVkIjp0cnVlLCJrZXljb21tYW5kX2F1dG9fcGFnaW5hdGUiOnRydWUsImxvZ2dlZF9vdXRfc2VhcmNoIjp0cnVlLCJrcmFrZW5fd2ViX2xvZ2dpbmdfbGlicmFyeSI6dHJ1ZSwibGl2ZXBob3Rvc193ZWIiOnRydWUsInVzZXJfdGFnX2ZpbHRlcmluZyI6dHJ1ZSwicHJvamVjdF94X2FwcGVhbCI6dHJ1ZSwicHJvamVjdF94X3dlYl9zZW5zaXRpdmVfY292ZXJzIjp0cnVlLCJzYWZlX21vZGVfb3duX3Bvc3QiOnRydWUsIm1vYmlsZV93ZWJfcGhvdG9zZXRzIjp0cnVlLCJoaWRlX2RlZmF1bHRfaGVhZGVyc19ibG9nX2NhcmRzIjp0cnVlLCJub3RpZmljYXRpb25fcmVwbHlfbGlua190b19ub3RlcyI6dHJ1ZSwidHlwaW5nX2luZGljYXRvcl93cml0ZSI6dHJ1ZSwiZ2Rwcl9ndWNlX2lzX3JlcXVpcmVkIjp0cnVlLCJ0dW1ibHJfdmlkZW9fc3BvbnNvcmVkX2RheSI6dHJ1ZSwiY2FwdGNoYTp1c2VfcmVjYXB0Y2hhMiI6dHJ1ZSwibGl0dGxlX3Npc3RlciI6dHJ1ZSwibG9nX2xhZHkiOnRydWUsInJlZHBvcF9wb3N0X2Zvcm1fbW9iaWxlX2NyZWF0ZSI6dHJ1ZSwicmVkcG9wX2V4cGxvcmVfcGFnZSI6dHJ1ZSwiZ2Rwcl9xdWFudGNhc3RfY21wIjp0cnVlLCJkYXJsYV9hZF9mZWVkYmFjayI6dHJ1ZSwic3RhdHVzX2luZGljYXRvciI6dHJ1ZSwiY29udmVyc2F0aW9uYWxfbm90aWZpY2F0aW9ucyI6dHJ1ZSwiZGlzYWJsZV95YWhvb19iX2Nvb2tpZSI6dHJ1ZSwibGl2ZXBob3RvcyI6dHJ1ZX0=&quot;},&quot;Context&quot;:{&quot;name&quot;:&quot;default&quot;,&quot;time&quot;:1610260019000,&quot;userinfo&quot;:{&quot;primary&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;channels&quot;:[]},&quot;hosts&quot;:{&quot;assets_host&quot;:&quot;https:\/\/assets.tumblr.com&quot;,&quot;secure_assets_host&quot;:&quot;https:\/\/assets.tumblr.com&quot;,&quot;www_host&quot;:&quot;https:\/\/www.tumblr.com&quot;,&quot;secure_www_host&quot;:&quot;https:\/\/www.tumblr.com&quot;,&quot;embed_host&quot;:&quot;https:\/\/embed.tumblr.com&quot;,&quot;safe_host&quot;:&quot;https:\/\/safe.txmblr.com&quot;,&quot;platform_host&quot;:&quot;https:\/\/platform.tumblr.com&quot;},&quot;language&quot;:&quot;en_US&quot;,&quot;language_simple&quot;:&quot;en&quot;,&quot;assets&quot;:&quot;https:\/\/assets.tumblr.com\/client\/prod\/&quot;},&quot;Translations&quot;:{&quot;%1$sReport %2$s&#039;s post?%3$sIf it violates our community guidelines, we&#039;ll remove it.%4$s&quot;:&quot;%1$sReport %2$s&#039;s reblog?%3$sIf it violates our community guidelines, we&#039;ll remove it.%4$s&quot;,&quot;%1$sReport %2$s&#039;s reply?%3$sIf it violates our community guidelines, we&#039;ll remove it.%4$s&quot;:&quot;%1$sReport %2$s&#039;s reblog?%3$sIf it violates our community guidelines, we&#039;ll remove it.%4$s&quot;}}">
+  </noscript>
+  <script src="https://assets.tumblr.com/client/prod/standalone/tumblelog/index.build.js?_v=6be13416468978ab5fb9e5691b0323f3"></script>
+</body>
+</html>
